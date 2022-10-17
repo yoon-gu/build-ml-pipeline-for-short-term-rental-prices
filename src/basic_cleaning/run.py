@@ -42,6 +42,9 @@ def go(args):
     )
     artifact.add_file(args.output_artifact)
 
+    run.log_artifact(artifact)
+
+    os.remove(args.output_artifact)
 
 if __name__ == "__main__":
 
